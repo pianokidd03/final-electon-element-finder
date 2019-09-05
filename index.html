@@ -1,0 +1,139 @@
+<!--Current problem to solve: get the php file (results.php) NOT to return a blank line when it is asked for the passed data-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Electron - Element Finder</title>
+<!--
+
+Some Style Elements from Template 2085 - Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--<script type="text/javascript" src="js/search.js"></script> -->
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+          <div class="navbar-header">
+               <a href="index.html" class="navbar-brand">Electron</a>
+          </div>
+  </div>
+</div>
+
+<!-- Home Section button -->
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Welcome to Electron.</h1>
+                    <h3>Search any element in the Periodic Table.</h3>
+                    <section id="contact">
+				     <div class="container">
+				          <div class="row">
+
+				               <div class="col-md-offset-1 col-md-10 col-sm-12">
+			                         <div class="col-md-4 col-sm-4">
+                                <form action="newResults.php" method="POST">
+  			                         	  <select id="searchOption" name="searchOption" class="form-control">
+                											<option value="empty">Search Element By...</option>
+                											<option value="atomicNumber">Atomic Number</option>
+                											<option value="symbol">Symbol</option>
+                											<option value="name">Name</option>
+                											<option value="atomicMass">Atomic Mass</option>
+                											<option value="electronicConfiguration">Electronic Configuration</option>
+                											<option value="electronegativity">Electronegativity</option>
+                											<option value="atomicRadius">Atomic Radius</option>
+                											<option value="ionRadius">Ion Radius</option>
+                											<option value="vanDelWaalsRadius">van Del Waals Radius</option>
+                											<option value="ionizationEnergy">Ionization Energy</option>
+                											<option value="electronAffinity">Electron Affinity</option>
+                											<option value="oxidationStates">Oxidation States</option>
+                											<option value="standardState">Standard State</option>
+                											<option value="meltingPoint">Melting Point</option>
+                											<option value="boilingPoint">Boiling Point</option>
+                											<option value="density">Density</option>
+                											<option value="groupBlock">Group Block</option>
+                											<option value="yearDiscovered">Year Discovered</option>
+                										</select>
+
+  			                            <input name="queryInput" class="form-control" id="queryInput" placeholder="Enter Element Property">
+
+                                    <select id="searchType" name="searchType" class="form-control">
+                                      <option value="strictSearch">Strict Search</option>
+                                      <option value="generalSearch">General Search</option>
+                                    </select>
+
+                                    <input type="submit" id="searchBtn" name="searchBtn">
+                                  </form>
+			                      	 </div>
+				               </div>
+
+				          </div>
+				     </div>
+				</section>
+        </div>
+        </div>
+     </div>
+</section>
+<!--<form id="buttonChoice" action="results.php" method="POST"><div id="searchResults"></div></form> -->
+<!-- Blog Section -->
+
+<!-- Footer Section -->
+<footer>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Electron</h3>
+                    <p>And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him. - Col 3:17 </p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2019 Kidd Rd. Web Development - Some Design Elements Taken From Tooplate</p>
+                    </div>
+               </div>    
+          </div>
+     </div>
+</footer>	
+<!-- Back top -->
+<a href="#results-footer" class="go-top"><i class="fa fa-angle-up"></i></a>
+<!-- SCRIPTS -->
+<!--<script src="js/functionality.js"></script> -->
+<script src="js/elementPage.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
