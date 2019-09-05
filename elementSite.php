@@ -1,6 +1,5 @@
 <?php
 $element = $_REQUEST['q'];
-// echo $element;
 ?>
 
 <!DOCTYPE html>
@@ -66,10 +65,6 @@ $element = $_REQUEST['q'];
 
 	                    var relationalBranches = json[arrayId];
 	                    console.log(relationalBranches);
-
-	                    // TODO: FIND A BUILTIN THAT CAN FIND THE PROPERTY NAME OF JSON DATA
-
-	                    // THEN BUILD A FOR LOOP THAT CYCLES THOUGH THE NAMES AND ASIGNS A UNQUIE VARIABLE NAME TO ALL PROPERTIES 
 
 	                    function wikiQuery(name){
 	                         var xmlhttp = new XMLHttpRequest();
